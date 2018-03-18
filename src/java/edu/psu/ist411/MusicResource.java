@@ -39,7 +39,7 @@ public class MusicResource {
     @Produces(MediaType.TEXT_HTML)
     public String getHtml() {
         return "<html><head><title>TESTING</title></head><body>TESTING</body></html>";
-    }              
+    }
 
     /**
      * PUT method for updating or creating an instance of MusicResource
