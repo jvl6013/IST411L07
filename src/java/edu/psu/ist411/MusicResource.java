@@ -38,9 +38,8 @@ public class MusicResource {
     @GET
     @Produces(MediaType.TEXT_HTML)
     public String getHtml() {
-        //TODO return proper representation object
-        throw new UnsupportedOperationException();
-    }
+        return "<html><head><title>TESTING</title></head><body>TESTING</body></html>";
+    }              
 
     /**
      * PUT method for updating or creating an instance of MusicResource
