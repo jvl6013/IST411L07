@@ -1,7 +1,6 @@
 
 package edu.psu.ist411;
 
-import java.util.Scanner;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
@@ -14,7 +13,7 @@ import javax.ws.rs.core.MediaType;
 /**
  * REST Web Service
  *
- * @author IST 411 Group 2
+ * @author ISt 411 Group 2
  */
 @Path("music")
 public class MusicResource {
@@ -35,8 +34,8 @@ public class MusicResource {
     @GET
     @Produces(MediaType.TEXT_HTML)
     public String getHtml() {
-        System.out.println("received get request");
-        return " ";
+        System.out.println("GET method called.");
+        return "<html><head><title>TESTING</title></head><body>TESTING</body></html>";
     }
 
     /**
@@ -46,18 +45,5 @@ public class MusicResource {
     @PUT
     @Consumes(MediaType.TEXT_HTML)
     public void putHtml(String content) {
-        System.out.println("received put request");
-    }
-    
-    @PUT
-    @Consumes(MediaType.TEXT_HTML)
-    public void postHtml(String content) {
-        System.out.println("received post request");
-    }
-    
-    @PUT
-    @Consumes(MediaType.TEXT_HTML)
-    public void deleteHtml(String content) {
-        System.out.println("received delete request");
     }
 }

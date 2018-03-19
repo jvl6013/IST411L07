@@ -27,7 +27,7 @@ public class HTTPClient {
                 String input = scan.nextLine();
                 String methodType = input.split(" ")[0];
                 if (methodType.equalsIgnoreCase("Get")) {
-                    connection = new Socket(serverInetAddress, 8080);
+                    connection = new Socket(serverInetAddress + "/IST411L07/webresources/musicmaker", 8080);
                     try(OutputStream out = connection.getOutputStream();
                             BufferedReader in = new BufferedReader(new InputStreamReader(
                             connection.getInputStream()))) {
