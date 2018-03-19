@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package edu.psu.ist411;
 
+import java.util.Scanner;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
@@ -17,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 /**
  * REST Web Service
  *
- * @author myphs
+ * @author IST 411 Group 2
  */
 @Path("music")
 public class MusicResource {
@@ -38,8 +35,8 @@ public class MusicResource {
     @GET
     @Produces(MediaType.TEXT_HTML)
     public String getHtml() {
-        //TODO return proper representation object
-        throw new UnsupportedOperationException();
+        System.out.println("received get request");
+        return " ";
     }
 
     /**
@@ -49,5 +46,18 @@ public class MusicResource {
     @PUT
     @Consumes(MediaType.TEXT_HTML)
     public void putHtml(String content) {
+        System.out.println("received put request");
+    }
+    
+    @PUT
+    @Consumes(MediaType.TEXT_HTML)
+    public void postHtml(String content) {
+        System.out.println("received post request");
+    }
+    
+    @PUT
+    @Consumes(MediaType.TEXT_HTML)
+    public void deleteHtml(String content) {
+        System.out.println("received delete request");
     }
 }

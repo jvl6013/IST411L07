@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.psu.ist411;
 
 import java.util.Set;
@@ -10,7 +5,7 @@ import javax.ws.rs.core.Application;
 
 /**
  *
- * @author myphs
+ * @author IST 411 Group 2
  */
 @javax.ws.rs.ApplicationPath("webresources")
 public class ApplicationConfig extends Application {
